@@ -1,0 +1,78 @@
+{
+  "companies": [
+    {
+      "id": "1",
+      "company": "Restaurante Exemplo",
+      "cnpj": "00.000.000/0001-00",
+      "email": "contato@exemplo.com",
+      "password": "123456"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "companyId": "1",
+      "name": "Frango",
+      "unit": "kg",
+      "cost": 10.0
+    },
+    {
+      "id": "2",
+      "companyId": "1",
+      "name": "Arroz",
+      "unit": "kg",
+      "cost": 5.0
+    },
+    {
+      "id": "3",
+      "companyId": "1",
+      "name": "Feijão",
+      "unit": "kg",
+      "cost": 8.0
+    }
+  ],
+  "techDataSheets": [
+    {
+      "id": "1",
+      "companyId": "1",
+      "name": "Frango com arroz e feijão",
+      "yield": 1
+    }
+  ],
+  "itemDetails": [
+    {
+      "id": "1",
+      "techDataSheetsId": "1",
+      "productId": null,
+      "quantity": 0.5
+    },
+    {
+      "id": "2",
+      "techDataSheetsId": "1",
+      "productId": null,
+      "quantity": 0.1
+    },
+    {
+      "id": "3",
+      "techDataSheetsId": "1",
+      "productId": null,
+      "quantity": 0.2
+    }
+  ],
+  "menus": [
+    {
+      "id": "1",
+      "companyId": "1",
+      "name": "Cardápio da semana"
+    }
+  ],
+  "menuItems": [
+    {
+      "id": "1",
+      "menuId": "1",
+      "techDataSheetsId": "1",
+      "portionsPredicted": 50
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
