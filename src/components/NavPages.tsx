@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { navLinks } from "./NavLinks";
+import { navLinks } from "../constants/navLinks";
 
 const NavPages = () => {
   return (

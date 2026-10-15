@@ -10,25 +10,39 @@
   ],
   "products": [
     {
-      "id": "1",
       "companyId": "1",
-      "name": "Frango",
+      "name": "Cebola",
       "unit": "kg",
-      "cost": 10.0
+      "cost": 5,
+      "id": "4feP1tPXrGo"
     },
     {
-      "id": "2",
       "companyId": "1",
-      "name": "Arroz",
-      "unit": "kg",
-      "cost": 5.0
+      "name": "aRRoz",
+      "unit": "KG",
+      "cost": 3,
+      "id": "Plqo2k-Ye0Y"
     },
     {
-      "id": "3",
       "companyId": "1",
-      "name": "Feijão",
-      "unit": "kg",
-      "cost": 8.0
+      "name": "Laranja",
+      "unit": "kh",
+      "cost": 4,
+      "id": "IXexqhH9mtM"
+    },
+    {
+      "companyId": "1",
+      "name": "Cebolabb",
+      "unit": "CX",
+      "cost": 5,
+      "id": "w6MTb5A1ZyY"
+    },
+    {
+      "companyId": "1",
+      "name": "Cenoura",
+      "unit": "KG",
+      "cost": 5,
+      "id": "1XmAbOe9REs"
     }
   ],
   "techDataSheets": [

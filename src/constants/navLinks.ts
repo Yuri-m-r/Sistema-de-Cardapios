@@ -4,3 +4,4 @@ export const navLinks = [
   { to: "/products", label: "Products" },
   { to: "/technical-data-sheets", label: "Technical Data Sheets" },
 ];
+
