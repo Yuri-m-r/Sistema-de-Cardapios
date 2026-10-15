@@ -1,75 +1,118 @@
-# React + TypeScript + Vite
+# Sistema de Cardápios
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web para gerenciamento de produtos e cardápios, desenvolvida com React, TypeScript, Tailwind CSS, Axios e JSON Server.
 
-Currently, two official plugins are available:
+## 🚀 Tecnologias
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- Axios
+- JSON Server
 
-## React Compiler
+## ✨ Funcionalidades
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Produtos
 
-## Expanding the ESLint configuration
+- Listagem de produtos
+- Busca de produtos
+- Exclusão de produtos
+- Cadastro de produtos
+- Edição de produtos
+- Confirmação antes da exclusão
+- Prevenção de exclusões duplicadas
+- Feedback visual durante a busca
+- Tratamento de erros
+- Exibição do total de produtos encontrados
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📋 Pré-requisitos
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Antes de começar, você precisa ter instalado:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- [Node.js](https://nodejs.org/)
+- npm
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🔧 Instalação
 
+Clone o repositório:
+
+```bash
+git clone URL_DO_REPOSITORIO
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Entre na pasta do projeto:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+cd Sistema-de-Cardapios
+```
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Instale as dependências:
 
+```bash
+npm install
+```
+
+## ⚙️ Configuração
+
+Crie um arquivo `.env` na raiz do projeto:
+
+```env
+VITE_API_URL=http://localhost:3000
+```
+
+O projeto também possui um arquivo `.env.example` como referência.
+
+## 🗄️ Banco de dados
+
+O projeto utiliza o JSON Server como API para persistência dos dados.
+
+O arquivo `db.json` está incluído no repositório para facilitar a execução do projeto após o clone.
+
+Inicie o servidor:
+
+```bash
+npm run server
+```
+
+A API estará disponível em:
+
+```text
+http://localhost:3000
+```
+
+## ▶️ Executando o projeto
+
+Em outro terminal, execute:
+
+```bash
+npm run dev
+```
+
+O Vite exibirá no terminal o endereço para acessar a aplicação.
+
+## 🛠️ Scripts disponíveis
+
+```bash
+# Inicia o ambiente de desenvolvimento
+npm run dev
+
+# Inicia o JSON Server
+npm run server
+
+# Gera a build de produção
+npm run build
+```
+
+## 📌 Status do projeto
+
+🚧 Em desenvolvimento.
+
+Novas funcionalidades e melhorias serão adicionadas conforme o projeto evolui.
+
+## 👨‍💻 Autor
+
+Yuri Rangel
+
+```
 ```
